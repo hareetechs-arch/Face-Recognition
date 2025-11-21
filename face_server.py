@@ -45,3 +45,8 @@ async def verify_face(stored_image: UploadFile = File(...), live_image: UploadFi
             status_code=500,
             content={"success": False, "error": str(e)}
         )
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    import uvicorn
+    uvicorn.run("face_server:app", host="0.0.0.0", port=port)

@@ -1,8 +1,8 @@
 fastapi
 uvicorn
 python-multipart
-deepface==0.0.79
-tensorflow-cpu==2.10.0
 numpy==1.23.5
-opencv-python-headless==4.8.0.74
 pillow
+opencv-python-headless==4.8.0.74
+tensorflow-cpu==2.10.0
+deepface==0.0.79

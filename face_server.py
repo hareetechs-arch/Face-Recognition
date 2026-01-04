@@ -29,7 +29,8 @@ async def verify_face(stored_image: UploadFile = File(...), live_image: UploadFi
             img2_path=live_path,
             model_name="ArcFace",
             detector_backend="retinaface",
-            distance_metric="cosine"
+            distance_metric="cosine",
+            enforce_detection=False
         )
 
         os.remove(stored_path)
